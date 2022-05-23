@@ -1,0 +1,15 @@
+name: First Workflow
+
+on:
+  push:
+    branches: [ master ]
+    
+jobs:
+  First-Job:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Running tests
+        run: mvn test
