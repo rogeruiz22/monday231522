@@ -14,7 +14,7 @@ public class AppTest {
 
         String pageTitle = driver.getTitle();
 
-        Assert.assertEquals(pageTitle, "Login | Salesforce", "Not geeting the page to load");
+        Assert.assertEquals(pageTitle, "Login | Salesforce", "Not getting the page to load");
 
         driver.quit();
     }
